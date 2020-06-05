@@ -77,38 +77,20 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
         {
-          "type": "bubble",
-          "hero": {
-            "type": "image",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png",
-            "size": "full",
-            "aspectRatio": "20:13",
-            "aspectMode": "cover"
-          },
-          "footer": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
+            "type": "text",
+            "text": "$ LINE emoji $",
+            "emojis": [
               {
-                "type": "spacer",
-                "size": "xxl"
+                "index": 0,
+                "productId": "5ac1bfd5040ab15980c9b435",
+                "emojiId": "001"
               },
               {
-                "type": "button",
-                "style": "primary",
-                "color": "#905c44",
-                "action": {
-                  "type": "uri",
-                  "label": "Add to Cart",
-                  "uri": "https://linecorp.com"
-                }
-              },
-              {
-                "type": "spacer",
-                "size": "xxl"
+                "index": 13,
+                "productId": "5ac1bfd5040ab15980c9b435",
+                "emojiId": "002"
               }
             ]
-          }
         }
         ])
         alert("message sent")
